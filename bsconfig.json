@@ -8,31 +8,9 @@
     "react-jsx": 3
   },
   "bs-dependencies": [
-    "reason-react"
-  ],
-  "bs-dev-dependencies": [
-    "immutable-re",
-    "@glennsl/bs-jest",
-    "bs-react-testing-library",
-    "reason-hooks-testing-library"
+    "@rescript/react"
   ],
   "sources": [
-    "src",
-    {
-      "dir": "examples",
-      "subdirs": [
-        "basic",
-        "react",
-        "immutable",
-        "render",
-        "render-v2",
-        "todomvc"
-      ],
-      "type": "dev"
-    },
-    {
-      "dir": "__tests__",
-      "type": "dev"
-    }
+    "src"
   ]
 }

@@ -30,13 +30,13 @@ and add it to `bsconfig.json`:
 
 ## Hooks
 
-`ReasonReact` version 0.7.0 has added [support](https://reasonml.github.io/reason-react/blog/2019/04/10/react-hooks) for react hooks and `reductive` now includes a set of hooks to subscribe to the store and dispatch actions. With the new hooks there is no need to use `Lense`s that wrap components, which results in simpler and cleaner code with a flat component tree. Moreover, the new hooks API is [safe to use in concurrent mode](https://github.com/facebook/react/tree/master/packages/use-subscription#use-subscription).
+`React` version 0.7.0 has added [support](https://reasonml.github.io/reason-react/blog/2019/04/10/react-hooks) for react hooks and `reductive` now includes a set of hooks to subscribe to the store and dispatch actions. With the new hooks there is no need to use `Lense`s that wrap components, which results in simpler and cleaner code with a flat component tree. Moreover, the new hooks API is [safe to use in concurrent mode](https://github.com/facebook/react/tree/master/packages/use-subscription#use-subscription).
 
 The `Lense` API is still available, since there is support for the old `jsx` and reducer style components, but is marked as deprecated, since the old `jsx` syntax is also [deprecated](https://reasonml.github.io/reason-react/docs/en/jsx-2) in the `reason-react` docs. The preferred way of using `reductive` is via the new hooks API.
 
 ### Requirements
 
-The new hooks API is built on top of the existing `react` hooks. In order to use hooks in `ReasonReact`, you have to use the [new jsx](https://reasonml.github.io/reason-react/blog/2019/04/10/react-hooks) syntax for `ReasonReact` components and `^5.0.4` or `^6.0.1` of `bs-platform`.
+The new hooks API is built on top of the existing `react` hooks. In order to use hooks in `React`, you have to use the [new jsx](https://reasonml.github.io/reason-react/blog/2019/04/10/react-hooks) syntax for `React` components and `^5.0.4` or `^6.0.1` of `bs-platform`.
 
 New projects will use the latest `jsx` version by default at the [application level](https://reasonml.github.io/reason-react/docs/en/jsx#application-level) by having `"react-jsx": 3` in `bsconfig.json`. Existing projects can be gradually converted using `[@bs.config {jsx: 3}]` to enable the new version at the [file level](https://reasonml.github.io/reason-react/docs/en/jsx#file-level).
 
